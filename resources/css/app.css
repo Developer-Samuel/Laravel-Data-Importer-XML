@@ -1,0 +1,102 @@
+@import 'errors.css';
+
+*,
+*::before,
+*::after
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.content
+{
+    position: relative;
+    width: 100%;
+    background: #000;
+}
+@media (height >= 600px) {
+    .content
+    {
+        height: 100vh;
+    }
+}
+@media (height < 600px) {
+    .content
+    {
+        height: 600px;
+    }
+}
+.container
+{
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+}
+
+@media (width >= 768px) {
+    .container
+    {
+        width: 550px;
+    }
+}
+@media (width < 768px) {
+    .container
+    {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+.xml-form
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+.btn
+{
+    text-decoration: none;
+    border: 0;
+    border-radius: 30px;
+    outline: 0;
+    cursor: pointer;
+}
+.content .import-btn
+{
+    position: relative;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 7.5px 25px;
+}
+.xml-btn
+{
+    background: #FF8416;
+}
+.excel-btn
+{
+    background: #1E6C41;
+    color: #fff;
+}
+
+.alert
+{
+    position: relative;
+    top: 100px;
+    padding: 1rem;
+    font-size: 24px;
+    color: #000;
+    border-radius: 20px;
+}
+.alert-success
+{
+    background: #00DF13;
+}
+.alert-error
+{
+    background: #FF0000;
+}
+.alert .message
+{
+    position: relative;
+    text-align: center;
+}
